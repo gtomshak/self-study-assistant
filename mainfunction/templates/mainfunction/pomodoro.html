@@ -1,0 +1,58 @@
+{% extends 'mainfunction/base.html' %}
+
+{% block title %}Pomodoro Timer{% endblock %}
+
+{% block content %}
+<h1>Pomodoro Timer</h1>
+<h3>Stay focus with pomodoro methodology</h3>
+<div class="quote-body">
+	<div class="wrapper">
+		<div class="mainContainer">
+			<div class="container">
+				<div class="glass">
+					<div class="modeSelector">
+						<button
+						class="modeSelector__Button active"
+						id="pomodoroButton"
+						data-mode="pomodoro"
+						>
+						Pomodoro
+					</button>
+					<button
+					class="modeSelector__Button"
+					id="shortButton"
+					data-mode="short"
+					>
+					Short Break
+				</button>
+				<button
+				class="modeSelector__Button"
+				id="longButton"
+				data-mode="long"
+				>
+				Long Break
+			</button>
+		</div>
+		<p class="timer" id="timer" data-mode="pomodoro">25:00</p>
+		<div class="timerControl">
+			<!-- <i class="fa fa-refresh" id="re	" aria-hidden="true"></i> -->
+			<i
+			class="fa fa-play"
+			id="toggle"
+			data-paused="true"
+			aria-hidden="true"
+			></i>
+			<!-- <i class="fa fa-pause" id="pause" aria-hidden="true"></i> -->
+			<!-- <i class="fa fa-stop" aria-hidden="true"></i> -->
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+{% endblock %}
